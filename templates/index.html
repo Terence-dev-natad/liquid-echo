@@ -1,293 +1,602 @@
 <!DOCTYPE html>
-<html class="scroll-smooth m-0 p-0" lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="customize.css">
+    <link rel="icon" href="../templates/images/favicon.png" type="image/x-icon">
+    
+    <title>Liquid-echo</title>
 </head>
-<body  class="bg-[rgb(30,30,30)] text-[rgb(255,255,255)]">
-    <main id="home" class="h-screen">
-        <header class="flex justify-evenly items-center  p-3 h-24 fixed top-0 right-0 left-0 z-[100] bg-transparent bg-opacity-100 sm:flex sm:justify-start md:justify-start">
-            <img class="w-28 h-8" src="../templates/images/natad.png" alt="">
-            <nav class="text-[rgb(255,255,255)] list-none flex gap-10 font-bold text-xl md:hidden">
-                <a class="pt-1 pb-1 pl-4 pr-4 delay-500" href="#home">Home</a>
-                <a class="pt-1 pb-1 pl-4 pr-4 delay-500" href="#about">About</a>
-                <a class="pt-1 pb-1 pl-4 pr-4 delay-500" href="#service">Services</a>
-                <a class="pt-1 pb-1 pl-4 pr-4 delay-500" href="#projects">Projects</a>
-            </nav>
-        </header>
-        <div class="grid grid-cols-2 pt-32 place-items-center lg:grid-cols-1 sm:mt-32 lg:mt-32 md:mt-32">
-            <div class="pl-16 w-3/4 md:text-center sm:pl-0">
-                <h1 class="font-mono text-4xl w-[full] font-extrabold md:text-center lg:text-center ">Hi, My Name is Terence I <span class="text-[rgb(0,173,181)]">design</span> and <span class="text-amber-500">build </span>things on web.</h1>
-                <p class="mt-5 md:text-center lg:text-center">
-                     I’m a Front-end Developer and UI/UX designer based in Philippines.
-                </p>
-            </div>
-            <div>
-                <img class="md:hidden lg:hidden sm:hidden" src="../templates/images/man.png" alt="">
-            </div>
-           
+<body class="m-0 p-0 bg-[rgb(0,21,56)] font-dmsans">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-transparent ">
+        <nav class="flex justify-evenly place-items-center text-xl pt-4 pb-4 ml-4 mr-4">
+            <a class="p-4 text-neutral-50 font-semibold sm:hidden hover:text-blue-700 transition" href="#home">Home</a>
+            <a class="p-4 text-neutral-50 font-semibold sm:hidden hover:text-blue-700 transition" href="#about">About</a>
+            <a class="p-4 text-neutral-50 font-semibold sm:hidden hover:text-blue-700 transition" href="#roster">Roster</a>
+            <a href="#home"><img class="h-20" src="../templates/images/liquid-echo-log.png" alt=""></a>
+            <a class="p-4 text-neutral-50 font-semibold sm:hidden hover:text-blue-700 transition" href="#merch">Merch</a>
+            <a class="p-4 text-neutral-50 font-semibold sm:hidden hover:text-blue-700 transition" href="#blog">Blog</a>
+            <a class="p-4 text-neutral-50 font-semibold sm:hidden hover:text-blue-700 transition" href="#contacts">Contacts</a>
+        </nav>
+    </header>
+    <main id="home" class="h-screen flex justify-center items-center sm:h-96 md:h-128 lg:h-screen">
+        <div class="text-center z-30">
+            <h1 class="text-white font-extrabold text-9xl">Team Liquid Echo</h1>
         </div>
     </main>
-
-    <section id="about" class="pb-28 bg-[rgb(38,37,37)]">
-    <div class="pt-28">
+    <section id="about" class="bg-gradient-to-r from-[rgb(0,21,56)] to-[rgb(1,27,70)] pl-20 pr-20 text-white sm:pl-8 sm:pr-8">
+    <div class="pt-36 pb-36">
         <div class="text-center">
-            <h2 class="font-bold text-3xl ">About <span class="text-amber-500">Me</span></h2>
+            <h1 class="text-4xl font-bold">About <span class="text-[rgb(149,190,241)]">Liquid Echo</span></h1>
         </div>
-
-       <div class="flex justify-evenly mr-32 ml-32 sm:m-0">
-        <div class="grid grid-cols-2 place-items-center items-center justify-center mt-20 md:grid-cols-1 sm:grid-cols-1 gap-10 lg:grid-cols-1">
-            <div class="text-sm sm:text-center lg:text-center sm:pl-8 sm:pr-8">
-                <p class="w-full">
-                    Hi Everyone! My name is Terence Dave Natad,  a BSIT student of WMSU based in the Philippines. 
-                    I am currently focusing in HTML, CSS and Javascript as my core programming language.
-                </p>
-                <p class="mt-12 w-full">
-                    As a self-taught front-end developer and UI/UX designer, I've become proficient in HTML, CSS, JavaScript, and design tools such as Figma. 
-                    I learnt how to develop dynamic and visually appealing web sites using online lessons and hands-on projects. This path has provided me with a unique view on the junction of design and development, 
-                    allowing me to create seamless and user-friendly experiences. Balancing two responsibilities has been difficult but also gratifying, motivating my desire for continual learning and creativity.
-                </p>
-            </div>
-            <div class="">
-                <img class="h-[20rem]" src="../templates/images/laptop.png" alt="">
-            </div>
-            <div class="grid grid-cols-3 gap-4 sm:flex-col  xl:flex flex-shrink-0">
-                <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
-                    <h5 class="font-semibold text-xl mt-5">Experience</h5>
-                    <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
-                </div>
-                <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
-                    <h5 class="font-semibold text-xl mt-5">Companies</h5>
-                    <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
-                </div>
-                <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center ">
-                    <h5 class="font-semibold text-xl mt-5">Projects</h5>
-                    <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
-                </div>
-            </div>
+       <div class="grid grid-cols-2 place-items-center mt-8 sm:grid-cols-1">
+        <div class="pt-8 pb-8 pl-8 pr-8">
+            <h1></h1>
+            <p class="leading-loose text-justify">Team Liquid Echo, a powerhouse in the Mobile Legends: Bang Bang esports scene, emerged from a strategic partnership between Team Liquid and the renowned AURA Esports. The team's formation represents a blend of expertise and competitive spirit, bringing together top-tier talent from the Philippines to dominate the Mobile Legends battlefield. With a roster that includes celebrated players like Benedict "BennyQt" Gonzales and Karl "KarlTzy" Nepomuceno, Team Liquid Echo has quickly made a name for itself, securing a World Championship and aiming for continued success on the global stage.</p>
         </div>
+        <div class="pt-8 pb-8 pl-8 pr-8">
+            <img class="w-auto h-auto" src="../templates/images/champion-echo.jpg" alt="">
+        </div>
+        <div class="pt-8 pb-8 pl-8 pr-8">
+            <img class="w-auto h-auto" src="../templates/images/img-echo.png" alt="">
+        </div>
+        <div class="pt-8 pb-8 pl-8 pr-8">
+            <h1></h1>
+            <p class="leading-loose text-justify">Team Liquid Echo's journey is marked by resilience and strategic prowess. In their debut season, they faced formidable opponents, showcasing their skill and determination by advancing through challenging playoff brackets. Despite early setbacks, the team consistently demonstrated their potential, culminating in their triumph at the MLBB M4 World Championships. This victory not only highlighted their tactical superiority but also their ability to perform under pressure, earning them recognition as one of the premier teams in the Mobile Legends esports arena.</p>
+        </div>
+        <div class="pt-8 pb-8 pl-8 pr-8">
+            <h1></h1>
+            <p class="leading-loose text-justify">Beyond their in-game achievements, Team Liquid Echo has cultivated a strong fanbase, particularly in the Philippines, where their matches draw significant attention and support. The team's success is a testament to their rigorous training, strategic gameplay, and the synergy between their players. As they continue to compete in major tournaments, Team Liquid Echo remains committed to pushing the boundaries of what is possible in Mobile Legends esports, aiming for even greater heights and more championship titles.</p>
+        </div>
+        <div class="pt-8 pb-8 pl-8 pr-8">
+            <img class="w-auto h-auto" src="../templates/images/echo.jpg" alt="">
+        </div>
+       </div>
     </div>
+        
+    </section>
+    <section id="roster" class="pt-40 pb-40">
+        <div>
+            <h1 class="text-white text-4xl text-center font-bold">Team <span class="text-[rgb(149,190,241)]">Roster</span></h1>
+        </div>
+        <div class="grid grid-cols-5 gap-8 pt-20 pb-20 pl-20 pr-20  lg:grid-cols-3 md:grid-cols-2">
+            <div class="relative rounded-xl overflow-hidden">
+                <img src="../templates/images/karltzy.webp" alt="Karltzy">
+                <div class="absolute bottom-0 left-0 right-0 bg-black text-white text-center py-4 transition duration-300 opacity-0 hover:opacity-75">
+                    <h1 class="text-2xl font-bold">Karltzy</h1>
+                    <p class="text-lg">Jungler</p>
+                </div>
+            </div>
+            <div class="relative rounded-xl overflow-hidden">
+                <img src="../templates/images/jaypee.webp" alt="Karltzy">
+                <div class="absolute bottom-0 left-0 right-0 bg-black  text-white text-center py-4 transition duration-300 opacity-0 hover:opacity-75">
+                    <h1 class="text-2xl font-bold">Jaypee</h1>
+                    <p class="text-lg">Roamer</p>
+                </div>
+            </div>
+            <div class="relative rounded-xl overflow-hidden">
+                <img src="../templates/images/sanford.webp" alt="Karltzy">
+                <div class="absolute bottom-0 left-0 right-0 bg-black  text-white text-center py-4 transition duration-300 opacity-0 hover:opacity-75">
+                    <h1 class="text-2xl font-bold">Sanford</h1>
+                    <p class="text-lg">Exp Lane</p>
+                </div>
+            </div>
+            <div class="relative rounded-xl overflow-hidden">
+                <img src="../templates/images/sanji.webp" alt="Karltzy">
+                <div class="absolute bottom-0 left-0 right-0 bg-black  text-white text-center py-4 transition duration-300 opacity-0 hover:opacity-75">
+                    <h1 class="text-2xl font-bold">Sanji</h1>
+                    <p class="text-lg">Mid Lane</p>
+                </div>
+            </div>
+            <div class="relative rounded-xl overflow-hidden">
+                <img src="../templates/images/bennyqt.webp" alt="Karltzy">
+                <div class="absolute bottom-0 left-0 right-0 bg-black text-white text-center py-4 transition duration-300 opacity-0 hover:opacity-75">
+                    <h1 class="text-2xl font-bold">Bennyqt</h1>
+                    <p class="text-lg">Gold Lane</p>
+                </div>
+            </div>
+        </div>
+
+    <div class="grid grid-cols-4 justify-evenly text-white sm:grid-cols-2 sm:gap-8">
+        <div class="grid grid-rows-2 place-items-center">
+            <h1 class="text-3xl">4x</h1>
+            <p>MPL CHAMPION</p>
+        </div>
+        <div class="grid grid-rows-2 place-items-center">
+            <h1 class="text-3xl">1x</h1>
+            <p>M SERIES CHAMPION</p>
+        </div>
+        <div class="grid grid-rows-2 place-items-center">
+            <h1 class="text-3xl">11x</h1>
+            <p>WINSTREAK</p>
+        </div>
+        <div class="grid grid-rows-2 place-items-center">
+            <h1 class="text-3xl">8x</h1>
+            <p>DIVISION TITLES</p>
+        </div> 
     </div>
- </section>
-
-    <section class="h-screen">
-        <div class="pt-32 text-center">
-            <h1 class="font-bold text-3xl">Featured <span class="text-[rgb(50,205,50)]">Skills</span></h1>
-        </div>
-
-        <div class="flex flex-wrap justify-evenly pt-8 sm:grid-cols-1 gap-12">
-            <div>
-                <div class="text-center">
-                    <h2 class="text-lg font-semibold">FRONT-END</h2>
-                </div>
-                
-                <div class="grid grid-cols-3 gap-8 pt-8 sm:grid-cols-2">
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105">
-                        <div class="h-10 w-20">
-                            <img class="h-full w-full" src="../templates/images/html.png" alt="">
-                        </div>
-                        <p class="w-full text-center font-semibold">HTML</p>
-                    </div>
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105">
-                        <div class="h-10 w-20">
-                            <img class="h-full w-full" src="../templates/images/social.png" alt="">
-                        </div>
-                        <p class="w-full text-center font-semibold">CSS</p>
-                    </div>
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105">
-                        <div class="h-10 w-20">
-                            <img class="h-full w-full" src="../templates/images/java-script.png" alt="">
-                        </div>
-                        <p class="w-full text-center font-semibold">JavaScript</p>
-                    </div>
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105">
-                        <div class="h-10 w-20">
-                            <img class="h-full w-full" src="../templates/images/tailwind.png" alt="">
-                        </div>
-                        <p class="w-full text-center font-semibold">Tailwind</p>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="text-center">
-                    <h2 class="font-semibold text-lg">UI/UX</h2>
-                </div>
-                
-                <div class="grid grid-cols-2 gap-8 pt-8">
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105">
-                        <div class="h-10 w-20">
-                            <img class="h-full w-full" src="../templates/images/figma.png" alt="">
-                        </div>
-                        <p class="w-full text-center font-semibold">Figma</p>
-                    </div>
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105">
-                        <div class="h-10 w-20">
-                            <img class="h-full w-full" src="../templates/images/canva.jpg" alt="">
-                        </div>
-                        <p class="w-full text-center font-semibold">Canva</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
-
-    <section id="service" class="pb-80 bg-[rgb(44,44,44)] ">
-        <div class="pt-32 text-center ">
-            <h1 class="text-3xl font-bold">My <span class="text-[rgb(160,160,255)]">Services</span></h1>
-            <div class="grid grid-cols-3 place-items-center items-center gap-8 justify-evenly mt-40 mr-10 ml-10 md:grid-cols-1 lg:grid-cols-3 ">
-                <div class="bg-[rgb(38,37,37)] pb-12 pl-4 pr-4">
-                    <div class="flex justify-evenly items-center mt-4">
-                        <img class="h-10 " src="../templates/images/frontend.png " alt="">
-                        <h3 class="font-semibold text-lg">Front-end Development</h3>
-                    </div>
-                    <div class="text-center mt-6">
-                        <p class="text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam architecto officia sint deleniti nesciunt possimus quod maxime, dolorem quos reiciendis, repellat reprehenderit minima fuga autem. Necessitatibus dolorem delectus nam sed.
-                        </p>
-                    </div>
-                </div>
-                <div class="bg-[rgb(38,37,37)] pb-12 pl-4 pr-4">
-                    <div class="flex justify-evenly items-center mt-4">
-                        <img class="h-10" src="../templates/images/uiux.png " alt="">
-                        <h3 class="font-semibold text-lg">Ui/Ux Design</h3>
-                    </div>
-                    <div class="text-center mt-6">
-                        <p class="text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam architecto officia sint deleniti nesciunt possimus quod maxime, dolorem quos reiciendis, repellat reprehenderit minima fuga autem. Necessitatibus dolorem delectus nam sed.
-                        </p>
-                    </div>
-                </div>
-                <div class="bg-[rgb(38,37,37)] pb-12 pl-4 pr-4">
-                    <div class="flex justify-evenly items-center mt-4">
-                        <img class="h-10" src="../templates/images/webdesign.png " alt="">
-                        <h3 class="font-semibold text-lg">Web Design</h3>
-                    </div>
-                    <div class="text-center mt-6">
-                        <p class="text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam architecto officia sint deleniti nesciunt possimus quod maxime, dolorem quos reiciendis, repellat reprehenderit minima fuga autem. Necessitatibus dolorem delectus nam sed.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-</section>
-
-
-
-    <section id="projects">
-        <div class="pt-32">
-            <h1 class="text-3xl text-center font-bold">My <span class="text-[rgb(0,173,181)]">Projects</span></h1>
-            <div class="flex justify-evenly pl-10 pr-10">
-                <div class="grid grid-cols-3 gap-10 mt-10 md:grid-cols-2 sm:grid-cols-1">
-                    <div class="bg-[rgb(44,44,44)] rounded-lg pl-4 pr-4 pb-8 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105">
-                        <div class="grid grid-rows-1 place-items-center mt-8">
-                            <img class="rounded-lg h-full" src="../templates/images/movie.png" alt="">
-                        </div>
-                        <div class="grid grid-rows-1 gap-5 mt-8 ml-4">
-                            <h6 class="font-bold">Movie Clone Website</h6>
-                            <p class="text-sm w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dicta qui nesciunt. </p>
-                            <a class="w-28"  href="" target="_blank" class="text-sm font-extrabold">See project <span class="text-[rgb(255,111,97)]">&#8594</span></a>
+    <section class="bg-gradient-to-r from-[rgb(1,27,70)] to-[rgb(0,21,56)] pt-40 pb-40">
+        <div class="text-white text-4xl font-bold text-center"><h1>Player <span class="text-[rgb(149,190,241)]">Statistics</span></h1></div>
+        <div class="pl-4 pr-4">
+            <div class="grid grid-cols-3 justify-center items-center text-white pt-40 pb-40 pl-20 pr-20 lg:grid-cols-2 lg:gap-8 lg:place-items-center sm:grid-cols-1 sm:gap-10 md:grid-cols-1 md:gap-10">
+                <div class="grid grid-rows-2 place-items-center lg:place-items-start md:place-items-start md:grid-rows-1 lg:grid-rows-1">
+                    <div class="">
+                        <h1 class="text-3xl font-bold tracking-widest">KarlTzy</h1>
+                        <div class="flex flex-row space-x-10 pt-8 pb-8 font-semibold text-md">
+                            <span class="text-center">4.88 <br>KDA</span>
+                            <span class="text-center">02 <br>World Champions</span>
+                            <span class="text-center">03 <br>MPL Champions</span>
                         </div>
                     </div>
-                    <div class="bg-[rgb(44,44,44)] rounded-lg pl-4 pr-4 pb-8 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105">
-                        <div class="grid grid-rows-1 place-items-center mt-8">
-                            <img class="rounded-lg h-full" src="../templates/images/movie.png" alt="">
-                        </div>
-                        <div class="grid grid-rows-1 gap-5 mt-8 ml-4">
-                            <h6 class="font-bold">Movie Clone Website</h6>
-                            <p class="text-sm w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dicta qui nesciunt. </p>
-                            <a class="w-28"  href="" target="_blank" class="text-sm font-extrabold">See project <span class="text-[rgb(255,111,97)]">&#8594</span></a>
-                        </div>
+                    <div>
+                        <p class="indent-10 text-justify ">KarlTzy, born on August 22, 2004, began his career in Season 2 with Finesse Solid and later joined SGD Omega. He represented the Philippines in the 30th Southeast Asian Games, winning gold. After a stint with Bren Esports, where he won the M2 World Championship, KarlTzy moved to ECHO and secured his second world championship at M4, earning the title "The Young Goat." He is the first two-time M World Championship winner. His nickname is inspired by Dota 2 player Arteezy, and his success has influenced other players to adopt the "-Tzy" suffix.</p>
                     </div>
-                    <div class="bg-[rgb(44,44,44)] rounded-lg pl-4 pr-4 pb-8 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105">
-                        <div class="grid grid-rows-1 place-items-center mt-8">
-                            <img class="rounded-lg h-full" src="../templates/images/movie.png" alt="">
-                        </div>
-                        <div class="grid grid-rows-1 gap-5 mt-8 ml-4">
-                            <h6 class="font-bold">Movie Clone Website</h6>
-                            <p class="text-sm w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dicta qui nesciunt. </p>
-                            <a class="w-28"  href="" target="_blank" class="text-sm font-extrabold">See project <span class="text-[rgb(255,111,97)]">&#8594</span></a>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-        </div>
-    
-    </section>
-
-    <section class="">
-        <div class="pt-48 text-center">
-            <h1 class="font-bold text-3xl ">Connect with me to learn more about my work and <br> collaborate on exciting projects.</h1>
-        </div>
-        <div class="mt-12 flex gap-2 justify-center items-center">
-            <div class="bg-[rgb(0,173,181)] h-[30rem] w-[40rem] flex justify-center items-center">
-                <img class="h-[25rem]" src="../templates/images/3dboy.png" alt="">
-            </div>
-            <div class="bg-amber-500 h-[30rem] w-[40rem] grid justify-center items-center">
-                <div>
-                    <h1 class="font-bold text-center text-5xl">Contacts</h1>
                 </div>
                 <div>
-                <div class="grid grid-cols-2 justify-evenly gap-y-11 gap-x-16 lg:grid-cols-1 lg:gap-x-1 sm:gap-2 md:gap-2 xl:gap-3">
-                    <div class="bg-[rgba(255,216,99,0.27)] h-20 w-56 grid grid-rows place-items-center rounded-lg">
-                        <h2 class="font-bold">Send me an email here <span class="">&darr;</span></h2>
-                        <a class="font-semibold bg-slate-800 rounded-lg w-36 h-8 text-center flex justify-center items-center hover:bg-[rgb(255,111,97)] hover:scale-105" href="mailto:terencedavenatad@gmail.com">
-                            Mail Me
-                        </a>
+                    <img class="h-auto w-auto" src="../templates/images/channels4_profile-removebg-preview.png" alt="">
+                </div>
+                <div class="max-w-2xl md:w-[25rem]">
+                    <div class="text-center mb-8">
+                        <h2 class="text-xl font-bold">Player Information</h2>
                     </div>
-                    <div class="bg-[rgba(255,216,99,0.27)] h-20 w-56 grid grid-rows place-items-center rounded-lg">
-                        <h2 class="font-bold">Download my CV here <span class="">&darr;</span></h2>
-                        <a class="font-semibold bg-slate-800 rounded-lg w-36 h-8 text-center flex justify-center items-center hover:bg-[rgb(255,111,97)] hover:scale-105" href="path/to.your-cv.pdf" download="">
-                            Download CV
-                        </a>
-                    </div>
-                    <div class="bg-[rgba(255,216,99,0.27)] h-20 w-56 grid grid-rows place-items-center rounded-lg">
-                        <h2 class="font-bold">Contact with me here <span class="">&darr;</span></h2>
-                        <a class="font-semibold bg-slate-800 rounded-lg w-36 h-8 text-center flex justify-center items-center hover:bg-[rgb(255,111,97)] hover:scale-105" href=tel:+9657363643>Contact Me</a>
-                    </div>
-                    <div class="bg-[rgba(255,216,99,0.27)] h-20 w-56 grid grid-rows place-items-center rounded-lg">
-                        <h2 class="font-bold">My Socials here <span class="">&darr;</span></h2>
-                        <div class="grid grid-cols-4 gap-2 bg-slate-800 rounded-lg w-36 h-8 place-items-center ">
-                            <a  href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a  href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a  href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
-                            <a  href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="mb-4">
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Name:</span>
+                            <span>Karl Gabriel Nepomuceno</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Nationality:</span>
+                            <span class="flex items-center">
+                                <img src="../templates/images/ph-flag.png" alt="Philippines" class="w-5 h-5 mr-1">
+                                Philippines
+                            </span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Born:</span>
+                            <span>August 22, 2004 (age 19)</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Status:</span>
+                            <span>Active</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Role(s):</span>
+                            <span>Jungler</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Team:</span>
+                            <span>Team Liquid PH</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Alternate IDs:</span>
+                            <span>Karl</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Approx. Total Winnings:</span>
+                            <span>$182,598</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="font-bold">Signature Heroes:</span>
+                            <div class="flex space-x-1">
+                                <img src="../templates/images/38px-ML_icon_Lancelot_2021.png" alt="Hero 1" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Yi_Sun-Shin.png" alt="Hero 2" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Fredrinn.png" alt="Hero 3" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Akai_2022.png" alt="Hero 4" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Baxia.png" alt="Hero 4" class="w-8 h-8">
+                            </div>
                         </div>
                     </div>
-                    
-
                 </div>
             </div>
+            <div class="grid grid-cols-3 justify-center items-center text-white pt-40 pb-40 pl-20 pr-20 lg:grid-cols-1 lg:place-items-center sm:grid-cols-1 sm:gap-10 md:grid-cols-1 md:gap-10">
+                <div class="grid grid-rows-2 place-items-center lg:place-items-start md:place-items-start md:grid-rows-1 lg:grid-rows-1">
+                    <div class="">
+                        <h1 class="text-3xl font-bold tracking-widest">Jaypee</h1>
+                        <div class="flex flex-row space-x-10 pt-8 pb-8 font-semibold text-md">
+                            <span class="text-center">3.26 <br>KDA</span>
+                            <span class="text-center">01 <br>World Champions</span>
+                            <span class="text-center">03 <br>MPL Champions</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="indent-10 text-justify">Jaypee, the skilled roamer for Liquid Echo, is renowned for his exceptional map control and game awareness in Mobile Legends: Bang Bang. His strategic movements and timely support play a pivotal role in securing victories for his team. With a deep hero pool and excellent coordination, Jaypee consistently disrupts opponents and creates opportunities for his teammates, making him an invaluable asset to Liquid Echo.</p>
+                    </div>
+                </div>
+                <div>
+                    <img class="h-auto w-auto" src="../templates/images/channels4_profile__3_-removebg-preview.png" alt="">
+                </div>
+                <div class="max-w-2xl md:w-[25rem]">
+                    <div class="text-center mb-8">
+                        <h2 class="text-xl font-bold">Player Information</h2>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Name:</span>
+                            <span>Jaypee Gonzales Dela Cruz</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Nationality:</span>
+                            <span class="flex items-center">
+                                <img src="../templates/images/ph-flag.png" alt="Philippines" class="w-5 h-5 mr-1">
+                                Philippines
+                            </span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Born:</span>
+                            <span>October 22, 1998 (age 25)</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Status:</span>
+                            <span>Active</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Role(s):</span>
+                            <span>Roamer</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Team:</span>
+                            <span>Team Liquid PH</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Approx. Total Winnings:</span>
+                            <span>$132,524</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="font-bold">Signature Heroes:</span>
+                            <div class="flex space-x-1">
+                                <img src="../templates/images/38px-ML_icon_Chou.png" alt="Hero 1" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Kaja.png" alt="Hero 2" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Franco.png" alt="Hero 3" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Minotaur_2021.png" alt="Hero 4" class="w-8 h-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 justify-center items-center text-white pt-40 pb-40 pl-20 pr-20 lg:grid-cols-1 lg:place-items-center sm:grid-cols-1 sm:gap-10 md:grid-cols-1 md:gap-10">
+                <div class="grid grid-rows-2 place-items-center lg:place-items-start md:place-items-start md:grid-rows-1 lg:grid-rows-1">
+                    <div class="">
+                        <h1 class="text-3xl font-bold tracking-widest">Sanford</h1>
+                        <div class="flex flex-row space-x-10 pt-8 pb-8 font-semibold text-md">
+                            <span class="text-center">4.43 <br>KDA</span>
+                            <span class="text-center">01 <br>World Champions</span>
+                            <span class="text-center">02 <br>MPL Champions</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="indent-10 text-justify">Sanford Marin Vinuya, known as "Sanford," is a prominent EXP laner for Team Liquid Echo in Mobile Legends: Bang Bang. Born on June 24, 2006, he began his professional career with Nexplay EVOS in June 2021 and joined ECHO in June 2022. Sanford's achievements include winning the M4 World Championship and earning the Finals MVP title in MPL PH Season 13​​. His gameplay is characterized by strategic prowess and mechanical skill, notably with his favorite hero, Yu Zhong. Beyond esports, Sanford plans to invest in real estate and start a coffee shop, reflecting his future aspirations​ </p>
+                    </div>
+                </div>
+                <div>
+                    <img class="h-auto w-auto" src="../templates/images/GOIVKhEbkAImvvD-removebg-preview.png" alt="">
+                </div>
+                <div class="max-w-2xl md:w-[25rem]">
+                    <div class="text-center mb-8">
+                        <h2 class="text-xl font-bold">Player Information</h2>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Name:</span>
+                            <span>Sanford Marin Vinuya</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Nationality:</span>
+                            <span class="flex items-center">
+                                <img src="../templates/images/ph-flag.png" alt="Philippines" class="w-5 h-5 mr-1">
+                                Philippines
+                            </span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Born:</span>
+                            <span>June 24, 2006 (age 18)</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Status:</span>
+                            <span>Active</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Role(s):</span>
+                            <span>EXP Laner</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Team:</span>
+                            <span>Team Liquid PH</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Alternate IDs:</span>
+                            <span>SanFord</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Approx. Total Winnings:</span>
+                            <span>$128,469</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="font-bold">Signature Heroes:</span>
+                            <div class="flex space-x-1">
+                                <img src="../templates/images/38px-ML_icon_Yu_Zhong_2024.png" alt="Hero 1" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Paquito.png" alt="Hero 2" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Lapu-Lapu.png" alt="Hero 3" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Benedetta.png" alt="Hero 4" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Arlott.png" alt="Hero 4" class="w-8 h-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 justify-center items-center text-white pt-40 pb-40 pl-20 pr-20 lg:grid-cols-1 lg:place-items-center sm:grid-cols-1 sm:gap-10 md:grid-cols-1 md:gap-10">
+                <div class="grid grid-rows-2 place-items-center lg:place-items-start md:place-items-start md:grid-rows-1 lg:grid-rows-1">
+                    <div class="">
+                        <h1 class="text-3xl font-bold tracking-widest">Sanji</h1>
+                        <div class="flex flex-row space-x-10 pt-8 pb-8 font-semibold text-md">
+                            <span class="text-center">11.5 <br>Most Assists</span>
+                            <span class="text-center">01 <br>World Champions</span>
+                            <span class="text-center">02 <br>MPL Champions</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="indent-10 text-justify">Sanji is a prominent mid laner for Team Liquid Echo in Mobile Legends: Bang Bang (MLBB). Known for his exceptional game sense and strategic playmaking, he excels in controlling the mid lane and creating opportunities for his team. Sanji's versatility and skillful execution make him a crucial asset in both team fights and map control, significantly contributing to Liquid Echo's success in competitive play.</p>
+                    </div>
+                </div>
+                <div>
+                    <img class="h-auto w-auto" src="../templates/images/channels4_profile__1_-removebg-preview.png" alt="">
+                </div>
+                <div class="max-w-2xl md:w-[25rem]">
+                    <div class="text-center mb-8">
+                        <h2 class="text-xl font-bold">Player Information</h2>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Name:</span>
+                            <span>Alston Pabico</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Nationality:</span>
+                            <span class="flex items-center">
+                                <img src="../templates/images/ph-flag.png" alt="Philippines" class="w-5 h-5 mr-1">
+                                Philippines
+                            </span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Born:</span>
+                            <span>October 22, 2005 (age 18)</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Status:</span>
+                            <span>Active</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Role(s):</span>
+                            <span>Mid Laner</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Team:</span>
+                            <span>Team Liquid PH</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Approx. Total Winnings:</span>
+                            <span>$125,581</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="font-bold">Signature Heroes:</span>
+                            <div class="flex space-x-1">
+                                <img src="../templates/images/38px-ML_icon_Yve_2024.png" alt="Hero 1" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Valentina.png" alt="Hero 2" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Pharsa.png" alt="Hero 3" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Novaria.png" alt="Hero 4" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Kadita.png" alt="Hero 4" class="w-8 h-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 justify-center items-center text-white pt-40  pl-20 pr-20 lg:grid-cols-1 lg:place-items-center sm:grid-cols-1 sm:gap-10 md:grid-cols-1 md:gap-10">
+                <div class="grid grid-rows-2 place-items-center lg:place-items-start md:place-items-start md:grid-rows-1 lg:grid-rows-1">
+                    <div class="">
+                        <h1 class="text-3xl font-bold tracking-widest">Bennyqt</h1>
+                        <div class="flex flex-row space-x-10 pt-8 pb-8 font-semibold text-md">
+                            <span class="text-center">4.72 <br>KDA</span>
+                            <span class="text-center">01 <br>World Champions</span>
+                            <span class="text-center">02 <br>MPL Champions</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="indent-10 text-justify">Bennyqt is a prominent gold laner for Liquid Echo in Mobile Legends: Bang Bang (MLBB). Known for his precise mechanics and strategic gameplay, Bennyqt plays a crucial role in scaling the team’s damage output through effective farming and positioning. His exceptional performance in the gold lane has been instrumental in securing key victories for Liquid Echo. Bennyqt’s ability to adapt and excel in high-pressure situations highlights his importance as a core player in the competitive MLBB scene.
+        
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img class="h-auto w-auto" src="../templates/images/channels4_profile__2_-removebg-preview.png" alt="">
+                </div>
+                <div class="max-w-2xl md:w-[25rem]">
+                    <div class="text-center mb-8">
+                        <h2 class="text-xl font-bold">Player Information</h2>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Name:</span>
+                            <span>Frederic Benedict Gonzales</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Nationality:</span>
+                            <span class="flex items-center">
+                                <img src="../templates/images/ph-flag.png" alt="Philippines" class="w-5 h-5 mr-1">
+                                Philippines
+                            </span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Born:</span>
+                            <span>September 10, 2001(age 22)</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Status:</span>
+                            <span>Active</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Role(s):</span>
+                            <span>Gold Laner</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Team:</span>
+                            <span>Team Liquid PH</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Alternate IDs:</span>
+                            <span>BennyQT</span>
+                        </div>
+                        <div class="flex justify-between mt-4 mb-4">
+                            <span class="font-bold">Approx. Total Winnings:</span>
+                            <span>$142,275</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="font-bold">Signature Heroes:</span>
+                            <div class="flex space-x-1">
+                                <img src="../templates/images/38px-ML_icon_Wanwan.png" alt="Hero 1" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Lunox.png" alt="Hero 2" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Karrie.png" alt="Hero 3" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Beatrix.png" alt="Hero 4" class="w-8 h-8">
+                                <img src="../templates/images/38px-ML_icon_Brody_2024.png" alt="Hero 4" class="w-8 h-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section class="bg-[rgb(1,27,70)]">
+        <div class="flex flex-row flex-nowrap flex-shrink-0 justify-evenly">
+            <div class="h-[10rem] w-[10rem]"><img class="w-full h-full" src="../templates/images/Davids-Salon-removebg-preview (1).png" alt=""></div>
+            <div class="h-[10rem] w-[10rem]"><img class="w-full h-full" src="../templates/images/redbull-removebg-preview.png" alt=""></div>
+            <div class="h-[10rem] w-[10rem]"><img class="w-full h-full" src="../templates/images/lawson-removebg-preview.png" alt=""></div>
+            <div class="h-[10rem] w-[10rem]"><img class="w-full h-full" src="../templates/images/sunnies-removebg-preview.png" alt=""></div>
+            <div class="h-[10rem] w-[10rem]"><img class="w-full h-full" src="../templates/images/Xiaomi-logo.png" alt=""></div>
+        </div>
+    </section>
+    <section id="merch" class="pt-40 pb-40 bg-gradient-to-br from-[rgb(0,21,56)] via-[rgb(1,27,70)] to-[rgb(0,0,42)]">
+        <div class="text-white text-4xl font-bold text-center">
+            <h1>Team <span class="text-[rgb(149,190,241)]">Merch</span></h1>
+        </div>
+        <div class="ml-20 mr-20">
+            <div class="flex justify-between text-white p-8">
+                <div  class="font-bold text-2xl">
+                    <h1>Shop Liquid</h1>
+                </div>
+                <div class="text-2xl font-bold space-x-2">
+                    <button id="before" class="transition-bg pl-2 pr-2 hover:bg-slate-400"><</button>
+                    <button id="next" class="transition-bg pl-2 pr-2 hover:bg-slate-400">></button>
+                </div>
+            </div>
+            <figure id="img-container" class="w-full h-[30rem] flex z-50 overflow-hidden shadow-lg border-2">
+                <img class="w-1/3 shrink-0" src="../templates/images/liquid-jacket.webp" alt="">
+                <img class="w-1/3 shrink-0" src="../templates/images/JERSEY_GAMERTAG_FRONT_5.webp" alt="">
+                <img class="w-1/3 shrink-0" src="../templates/images/JERSEY_TEAMLIQ_FRONT_1_eaf6ac7d-ae25-413a-802a-fb331c748784.webp" alt="">
+                <img class="w-1/3 shrink-0" src="../templates/images/liquid-jacket.webp" alt="">
+                <img class="w-1/3 shrink-0" src="../templates/images/liquid-jacket.webp" alt="">
+                <img class="w-1/3 shrink-0" src="../templates/images/liquid-jacket.webp" alt="">
+            </figure>
+        </div>
+       
+       
+       
+    </section>
+    <section id="blog" class="bg-gradient-to-br from-[rgb(0,0,42)] via-[rgb(1,27,70)] to-[rgb(0,21,56)] text-white pt-40 pb-40 pl-20 pr-20 sm:pl-10 sm:pr-10">
+        <div>
+            <h2 class="text-4xl font-bold mb-20 text-center">Latest <span class="text-[rgb(149,190,241)]">Blog</span></h2>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="grid grid-cols-2 place-items-center gap-8 sm:gap-4">
+                <div class="bg-[rgb(1,27,70)] p-4 rounded-lg h-[20rem]">
+                    <video class="w-full h-full" controls poster="../templates/images/g11.webp" src="../templates/videos/game1.mp4"></video>
+                    <p class="text-xs text-gray-500">20 Jul, 2024 • by Author</p>
+                    <p class="text-sm mt-2">MPL S13 Grand Finals: TLPH vs FCAP G1 Mic Check Game 1</p>
+                </div>
+                <div class=" bg-[rgb(1,27,70)] p-4 rounded-lg h-[20rem]">
+                    <video class="w-full h-full" controls poster="../templates/images/g2.webp" src="../templates/videos/game2.mp4"></video>
+                    <p class="text-xs text-gray-500">20 Jul, 2024 • by Author</p>
+                    <p class="text-sm mt-2">MPL S13 Grand Finals: TLPH vs FCAP G1 Mic Check Game 2</p>
+                </div>
+                <div class=" bg-[rgb(1,27,70)] p-4 rounded-lg h-[20rem]">
+                    <video class="w-full h-full" controls poster="../templates/images/g3.webp" src="../templates/videos/game3.mp4"></video>
+                    <p class="text-xs text-gray-500">20 Jul, 2024 • by Author</p>
+                    <p class="text-sm mt-2">MPL S13 Grand Finals: TLPH vs FCAP G1 Mic Check Game 3</p>
+                </div>
+                <div class=" bg-[rgb(1,27,70)] p-4 rounded-lg h-[20rem]">
+                    <video class="w-full h-full" controls poster="../templates/images/g4.webp" src="../templates/videos/game4.mp4"></video>
+                    <p class="text-xs text-gray-500">20 Jul, 2024 • by Author</p>
+                    <p class="text-sm mt-2">MPL S13 Grand Finals: TLPH vs FCAP G1 Mic Check Game 4</p>
+                </div>
             </div>
         </div>
-
     </section>
 
-    <footer class="h-80 bg-[rgb(44,44,44)]">
-        <div class="flex flex-col justify-center items-center">
-            <div class="mt-12">
-                <img class="h-full" src="images/natad.png" alt="logo-name">
+    <footer class="bg-[rgb(0,15,41)] text-white p-20">
+        <div class="grid grid-cols-3 sm:grid-cols-1 sm:gap-16">
+            <div class="flex items-center justify-center">
+                <img class="h-[20rem]" src="../templates/images/600px-Team_Liquid_Echo_full_lightmode.png" alt="">
             </div>
-
-            <div class="mt-10 flex flex-row gap-8">
-                <a  href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a  href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a  href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
-                <a  href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <div class="grid grid-rows-2 sm:grid-rows-2 sm:gap-40">
+                <div class="flex justify-evenly pt-6 pb-6">
+                    <div class="grid grid-cols-1 w-auto gap-4 h-0">
+                        <a href="">About Us</a>
+                        <a href="">Team</a>
+                        <a href="">Tournaments</a>
+                        <a href="">Partners</a>
+                    </div>
+                    <div class="grid grid-cols-1 w-auto gap-4 h-0">
+                        <a href="">FAQ</a>
+                        <a href="">Schedule</a>
+                        <a href="">Events</a>
+                        <a href="">Pro Players</a>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-8 ">
+                    <a href="https://www.facebook.com" class="border rounded-full pt-1 pb-1 pl-3 pr-3 hover:bg-cyan-600 transition">
+                        <i class="fab fa-facebook-f "></i>
+                      </a>
+                      <a href="https://www.instagram.com" class="border rounded-full pt-1 pb-1 pl-2 pr-2 hover:bg-cyan-600 transition">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="https://www.twitter.com" class="border rounded-full pt-1 pb-1 pl-2 pr-2 hover:bg-cyan-600 transition">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="https://www.youtube.com" class="border rounded-full pt-1 pb-1 pl-2 pr-2 hover:bg-cyan-600 transition">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                </div>
             </div>
-            <br>
-            <br>
-            <p>Designed & Built by Terence Dave Natad</p>
-            <p> Copyright &copy; All Rights Reserved</p>
-           
+            <div class="grid grid-rows-2 justify-center items-center">
+                <div class="pt-4 pb-4">
+                    <h6 class="">899 Uranus Street <br>Zamboanga City, PH</h6>
+                    <div class="flex flex-wrap space-x-10 pt-4 pb-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-xl"></i>
+                            <span>example@example.com</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                            <span>+123 456 7890</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        <input class="border-cyan-600 border rounded-sm bg-transparent pt-1 pb-1 pl-2 pr-2" type="text" placeholder="Your email">
+                        <button class="border-none bg-sky-700 pt-1 pb-1 pl-2 pr-2 rounded-sm">Subscribe</button>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2 justify-around">
+                    <span>Copyright &copy;. All rights reserved.</span>
+                </div>
+            </div>
         </div>
-
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
